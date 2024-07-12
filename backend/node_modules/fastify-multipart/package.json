@@ -1,0 +1,14 @@
+{
+  "name": "fastify-multipart",
+  "version": "5.4.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "url": "git://github.com/fastify/fastify-multipart.git"
+  },
+  "homepage": "https://github.com/fastify/fastify-multipart",
+  "dependencies": {
+    "process-warning": "^1.0.0",
+    "fastify-multipart-deprecated": "npm:fastify-multipart@5.3.1"
+  }
+}

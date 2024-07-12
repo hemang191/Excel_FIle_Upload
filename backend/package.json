@@ -1,0 +1,46 @@
+{
+	"name": "excel-handler-api",
+	"version": "1.0.0",
+	"description": "\"excel handler api\"",
+	"main": "server.js",
+	"scripts": {
+		"test": "mocha test",
+		"start": "nodemon server.js",
+		"start-worker": "nodemon worker.js"
+	},
+	"author": "Hemang",
+	"license": "ISC",
+	"dependencies": {
+		"@aws-sdk/client-s3": "^3.600.0",
+		"@fastify/cors": "^9.0.1",
+		"@fastify/express": "^3.0.0",
+		"@fastify/multipart": "^6.0.0",
+		"aws-sdk": "^2.1647.0",
+		"bull": "^4.14.0",
+		"bullmq": "^5.8.2",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.5",
+		"fake-s3": "^3.1.3",
+		"fastify": "^4.28.0",
+		"fastify-multipart": "^5.4.0",
+		"fs": "^0.0.1-security",
+		"joi": "^17.13.3",
+		"middle": "^0.0.2",
+		"mongoose": "^8.4.3",
+		"multer": "^1.4.5-lts.1",
+		"multer-s3": "^3.0.1",
+		"nodemon": "^3.1.3",
+		"pg": "^8.12.0",
+		"proxyquire": "^2.1.3",
+		"sequelize": "^6.37.3",
+		"sequelize-cli": "^6.6.2",
+		"util.promisify": "^1.1.2",
+		"uuid": "^10.0.0",
+		"xlsx": "^0.18.5"
+	},
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"mocha": "^10.6.0",
+		"sinon": "^7.3.2"
+	}
+}

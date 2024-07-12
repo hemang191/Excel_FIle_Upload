@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  background-color: #dde6ed;
+}
+
+/* App.vue */
+#app {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* ExcelUploader.vue */
+.upload-container {
+  display: flex;
+  align-items: center;
+  color: #555;
+  gap: 16px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.upload-container div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  background-color: #27374d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0 16px;
+  height: 40px;
+  white-space: nowrap;
+}
+
+.upload-btn {
+  background-color: #27374d;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.refresh-btn {
+  background-color: #72767a;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.download-btn {
+  background-color: #27374d;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.upload-btn:hover {
+  background-color: #1c2a3c;
+}
+
+.refresh-btn:hover {
+  background-color: #4d555f;
+}
+
+.download-btn:hover {
+  background-color: #1c2a3c;
+}
+
+.message {
+  height: 40px;
+  margin: 0;
+  padding: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.success {
+  color: rgb(12, 128, 12);
+  font-weight: bold;
+}
+
+.fail {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+input[type='file']::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+input[type='file']::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+input[type='file']::file-selector-button:active {
+  background-color: #e5e7eb;
+}
+
+/* ShipmentTable.vue */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  text-align: center;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+table td,
+table th {
+  padding-inline: 1.2rem;
+}
+
+table thead tr {
+  height: 3.8rem;
+  background: #27374d;
+}
+
+table tbody tr {
+  height: 3.4rem;
+}
+
+table tbody tr:last-child {
+  border: 0;
+}
+
+.table-head th {
+  color: #fff;
+  line-height: 1.2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-size: 0.9rem;
+  color: gray;
+  line-height: 1.2;
+}
+
+tbody tr:hover {
+  color: #555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .upload-container {
+    justify-content: space-between;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  table thead tr {
+    height: 3rem;
+  }
+
+  table tbody tr {
+    height: 2.8rem;
+  }
+
+  .table-head th {
+    font-size: 0.9rem;
+  }
+
+  tbody tr {
+    font-size: 0.8rem;
+  }
+}
